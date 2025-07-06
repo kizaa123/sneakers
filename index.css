@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    font-family: "Inter", sans-serif;
+}
+.main{
+     width: 100%;
+    min-height: 100vh;
+    background-color: rgb(170, 173, 177);
+
+}
+nav{
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 50px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .logo img{
+    width: 100px;
+    height: auto;
+    margin-right: 60px;
+}
+.logo ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.logo ul li a{
+    font-size: 19px;
+    font-weight: 500;
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+}
+.search i{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.container{
+    height: 100%;
+    width: calc(100% -110px);
+    display: flex;
+    position: relative;
+}
+.container .text{
+    width: 40%;
+    padding: 80px 100px;
+    height: 100%;
+}
+.text h5{
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+}
+.text h1{
+    font-size:55px;
+    color: #000;
+    margin-bottom: 25px;
+}
+.text p{
+    width: 80%;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 30px;
+}
+.text .btn{
+    background-color: #000;
+    color: #fff;
+    padding: 12px 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    border-top-left-radius: 0;
+}
+.product{
+    width: 60%;
+    padding:110px 100px;
+    height: 100%;
+    white-space:nowrap;
+    overflow-x: auto;
+}
+.product::-webkit-scrollbar{
+    display: none;
+}
+.product .card{
+    width: 250px;
+    height: 370px;
+    background-color: #1011;
+    position: relative;
+    box-shadow: 0px 5px 10px rgba(17, 0, 17, 0.3);
+    display: inline-block;
+    margin-right: 20px;
+}
+.product .card img{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.card h4{
+    font-size: 20px;
+    position: absolute;
+    bottom: 24%;
+    text-transform: capitalize;
+       left: 5%;
+  
+}
+.gender{
+    position: absolute;
+    bottom: 18%;
+    font-weight:500 ;
+       left: 5%;
+}
+.card .colour{
+    position: absolute;
+    bottom: 13%;
+    font-weight: 500;
+    text-transform: capitalize;
+     left: 5%;
+}
+.card .price{
+     position: absolute;
+    bottom: 6%;
+    font-weight: 600;
+    font-size: 14px;
+     text-transform: capitalize;
+     left: 5%;
+}
+
